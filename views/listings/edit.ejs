@@ -1,0 +1,45 @@
+<%layout("/layouts/boilerplate.ejs")%>
+
+<body>
+<h1>Update</h1>
+    <div class="container">
+        <form class="form-group needs-validation" novalidate action="/listings/<%=listing._id%>?_method=PUT" method="post">
+            <table class="table">
+                <tr>
+                    <td>Enter Title</td>
+                    <td><input type="text" name="listing[title]" class="form-control is-valid" required  value="<%=listing.title %>"  id=""></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td><textarea name="listing[description]" class="form-control  is-valid"  required  id=""><%=listing.description %></textarea></td>
+                </tr>
+                <tr>
+                    <td>Image Link</td>
+                    <td><input type="text" name="listing[image]" class="form-control is-valid"  required value="<%=listing.image %>"  id=""></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td><input type="number" name="listing[price]" class="form-control is-valid"  required  value="<%= listing.price%>" id=""></td>
+                </tr>
+                <tr>
+                    <td>Enter Location</td>
+                    <td><input type="text" name="listing[location]" class="form-control is-valid"  required value="<%=listing.location %>"  id=""></td>
+                </tr>
+                <tr>
+                    <td>Enter Country</td>
+                    <td><input type="text" name="listing[country]" class="form-control is-valid"  required  value="<%=listing.country %>"  id=""></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="btn btn-dark">Edit</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="/js/script.js"></script>
+</body>

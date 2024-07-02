@@ -1,0 +1,15 @@
+# Django specific
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+
+# Environment variables
+.env
+
+# VS Code specific
+.vscode/
+
+# macOS specific
+.DS_Store

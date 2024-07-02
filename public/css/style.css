@@ -1,0 +1,46 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+.f-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(210, 220, 220);
+margin-top: 500px;
+    
+}
+.f-info-social,.f-info-links,.f-info-brand{
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+}
+.f-info-social i{
+    margin-right: 1rem;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: black;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+/* Index */
+
+.card{
+    border: none;
+}
+
+.card-img-top{
+    object-fit: cover;
+}
+.card-body{
+    padding: 0;
+}
+/* Card Effects */
+.card-img-overlay:hover{
+    background-color: white;
+    opacity: 0.2;
+    cursor: pointer;
+
+}
