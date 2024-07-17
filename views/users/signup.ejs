@@ -1,0 +1,32 @@
+<%layout("/layouts/boilerplate.ejs")%>
+<div class="row mt-3">
+    <h1 class="col-6 offset-3">Sign Up on Home Haven</h1>
+    <div class="col-6 offset-3">
+        <form action="/signup" method="post" class="needs-validation form-group" novalidate>
+            <div class="form-group py-3">
+                <label for="title">Username</label>
+                <input type="text" name="username" id="username" class="form-control" placeholder="Enter Username" id="title" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Please Give a userbname.
+                  </div>
+            
+            </div>
+
+            <div class="form-group py-3">
+                <label for="title">Email</label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Enter Email Address" id="title" required>
+            
+            </div>
+
+            <div class="form-group py-3">
+                <label for="title">Password</label>
+                <input type="text" name="password" id="password" class="form-control" placeholder="Enter Password" id="title" required>
+            
+            </div>
+            <button class="btn btn-success">SignUp</button>
+        </form>
+    </div>
+</div>

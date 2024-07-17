@@ -1,0 +1,3 @@
+p0wUkNqbrd9yxRHe
+amanullahansari306
+mongodb+srv://amanullahansari306:<password>@cluster0.sjgt0tw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

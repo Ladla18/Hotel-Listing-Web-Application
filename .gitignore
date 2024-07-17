@@ -13,3 +13,6 @@ db.sqlite3
 
 # macOS specific
 .DS_Store
+
+
+node_modules/

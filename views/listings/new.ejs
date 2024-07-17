@@ -3,7 +3,7 @@
 <body>
 
     <div class="container">
-        <form class="form-group needs-validation" action="/listings" method="post" novalidate>
+        <form class="form-group needs-validation" action="/listings" method="post" novalidate enctype="multipart/form-data">
             <div class="form-group py-3">
                 <label for="title">Enter Title</label>
                 <input type="text" name="listing[title]" class="form-control" placeholder="Enter Title" id="title" required>
@@ -26,8 +26,8 @@
                   </div>
             </div>
             <div class="form-group py-3">
-                <label for="image">Image Link</label>
-                <input type="text" name="listing[image]" class="form-control" placeholder="Enter Image URL" id="image" required>
+                <label for="image">Upload Image</label>
+                <input type="file" name="listing[image]" class="form-control"  id="image" required>
                 <div class="valid-feedback">
                     Looks good!
                   </div>
