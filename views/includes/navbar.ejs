@@ -1,16 +1,26 @@
 <nav class="navbar navbar-expand-lg bg-body-light">
     <div class="container">
         <a class="navbar-brand" href="/listings"><i class="fa-solid fa-compass text-danger h1"></i></a>
+        <div id="mobile_search_bar" class="w-75">
+            <form class="form-inline my-2 my-lg-0 d-flex justify-content-center">
+                <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-
                 <a class="nav-link" href="/listings">Explore</a>
-                
-
+            </div>
+            
+            <div id="search_bar" class="d-flex justify-content-center w-100">
+                <form class="form-inline my-2 my-lg-0 d-flex justify-content-center">
+                    <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="/listings/new">Airbnb Your Home</a>
@@ -18,9 +28,9 @@
                     <a class="nav-link fw-bold" href="/signup">SignUp</a>
                     <a class="nav-link fw-bold" href="/login">Login</a>
                     <%}%>
-                <% if (currUser) {%>
-                    <a class="nav-link fw-bold" href="/logout">Logout</a>
-                    <%}%>
+                        <% if (currUser) {%>
+                            <a class="nav-link fw-bold" href="/logout">Logout</a>
+                            <%}%>
             </div>
         </div>
     </div>

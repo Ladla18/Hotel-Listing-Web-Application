@@ -59,3 +59,53 @@ body {
     height: 400px;
     width: 80vh;
 }
+/* Search */
+
+#search_bar input{
+    width: 150px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+#search_bar button{
+    background-color: #dc3545;
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
+#search_bar button:hover{
+    background-color: white;
+    color: black;
+}
+#search_bar button:active{
+    background-color: #dc3545;
+}
+
+#mobile_search_bar{
+    display: none;
+}
+@media screen and (max-width: 480px) {
+    #mobile_search_bar{
+        display: inline !important;
+    }
+    #mobile_search_bar input{
+        width: 100px;
+        margin-right: 20px;
+        border-radius: 20px;
+    }
+    #mobile_search_bar button{
+        background-color: #dc3545;
+        border-radius: 20px;
+        color: white;
+        border: none;
+    }
+    #mobile_search_bar button:hover{
+        background-color: white;
+        color: black;
+    }
+ 
+ }
+ @media screen and (max-width: 480px) {
+    #search_bar{
+        display: none !important;
+    }
+}
